@@ -37,7 +37,9 @@ conn = sqlite3.connect('test2.db')
 with conn:
     cur = conn.cursor()
     cur.execute("SELECT ALL col_filename FROM tbl_txtfiles")
+# create a variable that fetches all in the above SELECT ALL col
     varFiles = cur.fetchall()
+# loop through each item in the variable and print each out using the msg variable and the .format()
     for item in varFiles:
         msg = "File Name: {}".format(item[0])
         print(msg)
