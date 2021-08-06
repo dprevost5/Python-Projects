@@ -14,13 +14,13 @@ class Employee(Student):
     base_pay = 30.00
     job_title = ''
     department = 'General'
-    course_discount = 50  # They receive 50% off the course they attend
+    course_discount = 50  # They receive 50% off the courses they attend
     
 
 # Create another child class of Students who attend full-time
 class FullTime(Student):
 # They have all the attributes as Students listed above
 # but also include these added attributes
-    course_load = 0
+    course_load = 0   # Number of hours of courses per semester
     course_list = ''
     anticipated_grad = 'January 2022'
