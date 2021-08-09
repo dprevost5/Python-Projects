@@ -28,7 +28,7 @@ class Effleurage(Massage):
 
     # child class method
     def soothing(self):
-        msg = "\nThis is a great technique for warming up the muscles, stimulating venous and lymph return, \nand increasing relaxation before deeper techniques."
+        msg = "\nAdditional Benefits: {}, \nWhat makes this technique unique: {} \n\nThis is a great technique for warming up the muscles, stimulating venous and lymph return, \nand increasing relaxation before deeper techniques.".format(self.additional_benefits,self.uniqueness)
         return msg
 
 
@@ -45,7 +45,7 @@ class Myofascial_Release(Massage):
 
     # child class method
     def healing(self):
-        msg = "\nThis technique offers incredible long-term healing effects!"
+        msg = "\nAdditional Benefits: {}, \nWhat makes this technique unique: {} \n\nThis technique offers incredible long-term healing effects!".format(self.additional_benefits,self.uniqueness)
         return msg
 
 
